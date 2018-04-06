@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Neighborhood Map Project" content="Map of Denver Colorado">
+    <title>Denver Colorado - Neighborhood Map Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+  	<div id="selectMenu">
+      <h4>Neighborhood Map</h4>
+      <div id="closeMenu">
+        <a href="#" data-bind="click: closeMenu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </a>
+      </div>
+  		<input id="filter" data-bind="textInput: textInput, valueUpdate: 'afterkeydown'" placeholder="Filter List">
+      <hr>
+			<ul data-bind="foreach: selectFilter">
+				<a href="#"><li data-bind="text: title, click: $parent.displayInfo"></li></a>
+      </ul>
+    </div>
+
+    <div id="openMenu">
+      <a href="#" data-bind="click: openMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
+    </div>
+
+    <div id="map"></div>
+
+  	<script
+  		src=https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js>
+  	</script>
+
+  	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous">
+    </script>
+
+    <script src="js/app.js"></script>
+
+  	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyDYNXIhzknlTUYDcGDE8Vy8-d8vtpHBlQw&v=3&callback=appMain" onerror="mapsApiError()">
+    </script>
+   </body>
+  </html>

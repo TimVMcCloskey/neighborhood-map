@@ -1,0 +1,78 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#selectMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-left: 12px;
+}
+
+#selectMenu input {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 240px;
+  font-size: 16px;
+}
+
+#selectMenu h4 {
+  padding-top: 16px;
+  float: left;
+  color: #FFFFFF;
+}
+
+#closeMenu {
+  float: right;
+}
+
+#selectMenu a {
+  padding-top: 16px;
+  padding-right: 8px;
+  text-decoration: none;
+  font-size: .95em;
+  color: #FFFFFF;
+  display: block;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#openMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+#map {
+  overflow: hidden;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
